@@ -10,6 +10,9 @@
 		1BE62EE32A4B494600AC170C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EE22A4B494600AC170C /* HomeView.swift */; };
 		1BE62EE82A4B4A9100AC170C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EE72A4B4A9100AC170C /* BackgroundView.swift */; };
 		1BE62EEA2A4B4C4000AC170C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EE92A4B4C4000AC170C /* SearchBar.swift */; };
+		1BE62EEC2A4B668600AC170C /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EEB2A4B668600AC170C /* SearchResults.swift */; };
+		1BE62EEE2A4B66BB00AC170C /* IndividualResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EED2A4B66BB00AC170C /* IndividualResult.swift */; };
+		1BE62EF12A4B677B00AC170C /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EF02A4B677B00AC170C /* SearchResultModel.swift */; };
 		1BEFD26B2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */; };
 		1BEFD26D2A4A6D2C00A5FBEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */; };
 		1BEFD26F2A4A6D2F00A5FBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEFD26E2A4A6D2F00A5FBEE /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 		1BE62EE22A4B494600AC170C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1BE62EE72A4B4A9100AC170C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		1BE62EE92A4B4C4000AC170C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		1BE62EEB2A4B668600AC170C /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		1BE62EED2A4B66BB00AC170C /* IndividualResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualResult.swift; sourceTree = "<group>"; };
+		1BE62EF02A4B677B00AC170C /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
 		1BEFD2672A4A6D2C00A5FBEE /* Nasa Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectApp.swift; sourceTree = "<group>"; };
 		1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		1BE62EDF2A4B48CE00AC170C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62EF02A4B677B00AC170C /* SearchResultModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				1BE62EE92A4B4C4000AC170C /* SearchBar.swift */,
+				1BE62EEB2A4B668600AC170C /* SearchResults.swift */,
+				1BE62EED2A4B66BB00AC170C /* IndividualResult.swift */,
 			);
 			path = SearchBarComponents;
 			sourceTree = "<group>";
@@ -132,6 +141,7 @@
 		1BE62EE52A4B4A5B00AC170C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62EEF2A4B66C100AC170C /* ResultDisplayComponents */,
 				1BE62EE42A4B4A4B00AC170C /* SearchBarComponents */,
 			);
 			path = Components;
@@ -143,6 +153,13 @@
 				1BE62EE72A4B4A9100AC170C /* BackgroundView.swift */,
 			);
 			path = Background;
+			sourceTree = "<group>";
+		};
+		1BE62EEF2A4B66C100AC170C /* ResultDisplayComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResultDisplayComponents;
 			sourceTree = "<group>";
 		};
 		1BEFD25E2A4A6D2C00A5FBEE = {
@@ -339,9 +356,12 @@
 				1BE62EEA2A4B4C4000AC170C /* SearchBar.swift in Sources */,
 				1BE62EE82A4B4A9100AC170C /* BackgroundView.swift in Sources */,
 				1BEFD2742A4A6D2F00A5FBEE /* Persistence.swift in Sources */,
+				1BE62EEE2A4B66BB00AC170C /* IndividualResult.swift in Sources */,
+				1BE62EF12A4B677B00AC170C /* SearchResultModel.swift in Sources */,
 				1BEFD26D2A4A6D2C00A5FBEE /* ContentView.swift in Sources */,
 				1BEFD2772A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld in Sources */,
 				1BE62EE32A4B494600AC170C /* HomeView.swift in Sources */,
+				1BE62EEC2A4B668600AC170C /* SearchResults.swift in Sources */,
 				1BEFD26B2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

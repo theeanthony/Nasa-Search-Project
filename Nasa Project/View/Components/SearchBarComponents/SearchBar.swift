@@ -11,11 +11,11 @@ import SwiftUI
 struct SearchBar: View {
     
     @Binding var searchText : String
-    @FocusState var tapped : Bool
+    @FocusState var isFocused : Bool
     var body: some View {
         HStack {
             
-            if tapped{
+            if isFocused{
                 Image("nasa")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -24,10 +24,10 @@ struct SearchBar: View {
 
             }
             TextField("Search", text: $searchText)
-                .focused($tapped)
+                .focused($isFocused)
                 .padding()
                 .accentColor(.white)
-                .foregroundColor(tapped ? .white : .white.opacity(0.6))
+                .foregroundColor(isFocused ? .white : .white.opacity(0.6))
            
         }
         .background(Rectangle().stroke(.white, lineWidth: 2))

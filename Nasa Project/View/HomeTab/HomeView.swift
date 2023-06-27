@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var searchText : String = ""
     
     @State private var cancelPressed : Bool = false
+    
     var body: some View {
         VStack{
             Spacer()
@@ -23,6 +24,7 @@ struct HomeView: View {
             
             SearchBar(searchText: $searchText)
                 .padding(.vertical,15)
+            SearchResults()
             
             Spacer()
         }
