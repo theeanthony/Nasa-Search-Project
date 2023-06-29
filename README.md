@@ -28,16 +28,16 @@
 **Example of what the app contains***
 
 1. App launches and displays initial screen. Nasa Logo and a search bar with the search bar urging user to try searching for Apollo.
-![IMG_0885](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/bbb3b711-0b55-4d2d-96ba-db01cecc7693)
+<img src="https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/bbb3b711-0b55-4d2d-96ba-db01cecc7693" width="300">
 
 2. User taps on search bar, Nasa logo disappears to make space for search results 
-![IMG_0886](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/19011a0e-2758-43fb-a3b9-b230f3f1555a)
+![IMG_0886](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/19011a0e-2758-43fb-a3b9-b230f3f1555a){:width="300"}
 
 3. User searches for Apollo, and results appear
-![IMG_0887](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/9cf0fedc-8240-4293-89d5-03596af9410b)
+![IMG_0887](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/9cf0fedc-8240-4293-89d5-03596af9410b){:width="300"}
 
 4. User taps on result, and more information is displayed, along with photo and title. 
-![IMG_0888](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/e97bcd11-3247-45d7-855e-ca98c6d66510)
+![IMG_0888](https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/e97bcd11-3247-45d7-855e-ca98c6d66510){:width="300"}
 
 
 
