@@ -39,5 +39,7 @@
 4. User taps on result, and more information is displayed, along with photo and title. 
 <img src="https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/e97bcd11-3247-45d7-855e-ca98c6d66510" width="300">
 
+4. User goes back and taps on next page to see next page of Apollo results. 
+<img src="https://github.com/theeanthony/Nasa-Search-Project/assets/61211404/78d14123-e3ad-45f2-ba10-92481efc073c" width="300">
 
 
