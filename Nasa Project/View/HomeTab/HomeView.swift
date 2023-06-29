@@ -11,24 +11,35 @@ import SwiftUI
 struct HomeView: View {
     @State private var searchText : String = ""
     
-    @State private var cancelPressed : Bool = false
+    @State private var hideMainNasaImage : Bool = false
+    
+    
     
     var body: some View {
-        VStack{
-            Spacer()
-            
-            Image("nasa")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height:200)
-            
-            SearchBar(searchText: $searchText)
-                .padding(.vertical,15)
-            SearchResults()
-            
-            Spacer()
+        NavigationView{
+            VStack{
+                
+                if !hideMainNasaImage {
+                    
+                    Image("nasa")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height:200)
+                        .padding(.vertical,100)
+//                    Spacer()
+
+                }
+                
+                
+                SearchView(hideMainNasaImage:$hideMainNasaImage)
+                    .padding(.vertical,10)
+                
+            }
+            .background(BackgroundView())
         }
-        .background(BackgroundView())
+        .tint(.white)
+
+   
     }
 }
 

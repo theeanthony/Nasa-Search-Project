@@ -10,16 +10,14 @@ import SwiftUI
 
 struct IndividualResult: View {
     
+    
+    var result : SearchResultModel
     let image = Image("nasa")
     let title = "Title"
     var body: some View {
         HStack{
-            image
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height:50)
-                .background(Rectangle().stroke(.red,lineWidth: 1))
-            Text(title)
+            AsyncImageView(url: result.imageURL, width: 50, height: 50)
+            Text(result.title)
                 .foregroundColor(.white)
             
             Spacer()
@@ -31,8 +29,8 @@ struct IndividualResult: View {
     }
 }
 
-struct IndividualResult_Previews: PreviewProvider {
-    static var previews: some View {
-        IndividualResult()
-    }
-}
+//struct IndividualResult_Previews: PreviewProvider {
+//    static var previews: some View {
+//        IndividualResult()
+//    }
+//}

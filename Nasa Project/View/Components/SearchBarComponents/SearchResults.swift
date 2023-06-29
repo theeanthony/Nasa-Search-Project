@@ -9,31 +9,72 @@ import SwiftUI
 
 struct SearchResults: View {
     
-    @State private var results : [SearchResultModel] = [SearchResultModel(imageURL: "", title: "Hello", description: "", date: ""),SearchResultModel(imageURL: "", title: "Hello", description: "", date: ""),SearchResultModel(imageURL: "", title: "Hello", description: "", date: ""),SearchResultModel(imageURL: "", title: "Hello", description: "", date: ""),SearchResultModel(imageURL: "", title: "Hello", description: "", date: "") ]
+    @ObservedObject var searchViewModel: SearchViewModel
+    @State private var showError : Bool = false
+    
+    @Binding var logoShowing : Bool
+    
     var body: some View {
         VStack{
-            List(results) { result in
-                
-                IndividualResult()
-                    .listRowBackground(Color.black.opacity(0.6))
-                    .listRowSeparatorTint(.white.opacity(0.8))
+            
+            if searchViewModel.loadingSearch{
+                HStack{
+                    CustomProgressView(width: 80, height: 80)
+                }
+            }else if !searchViewModel.searchResults.isEmpty{
+                List(searchViewModel.searchResults) { result in
+                    NavigationLink(destination: DetailsView(result:result)) {
+                        IndividualResult(result: result)
+                            .listRowBackground(Color.black.opacity(0.6))
+                            .listRowSeparatorTint(.white.opacity(0.8))
+                    }
+                    
+                    .listRowBackground(Color.black)
 
+                    .buttonStyle(PlainButtonStyle())
 
-                
-
+                }
+                .listRowSeparator(.hidden)
+                .listStyle(.plain)
+                .listRowBackground(Color.black)
 
             }
-            .listRowSeparator(.hidden)
+                
+                else if logoShowing && searchViewModel.searchResults.isEmpty {
+                    SearchCases(searchViewModel: searchViewModel)
+                }
+            
+            if searchViewModel.totalPageNumbers != 0 {
+                PaginationView(searchViewModel: searchViewModel)
 
-            .listStyle(.plain)
-            .listRowBackground(Color.black)
+            }
+
+
      
         }
+        .background(BackgroundView())
+        .onChange(of: searchViewModel.fetchStatus) { newValue in
+            if newValue != .AllGood{
+                self.showError = true
+            }
+        }
+        .alert(isPresented: $showError) {
+            Alert(
+                title: Text("Error"),
+                message: searchViewModel.fetchStatus.showAlert(),
+                dismissButton: .cancel(
+                    Text("Ok"),
+                    action: {
+                    }
+                )
+            )
+        }
+
     }
 }
 
-struct SearchResults_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchResults()
-    }
-}
+//struct SearchResults_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchResults()
+//    }
+//}

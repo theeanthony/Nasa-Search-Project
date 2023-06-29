@@ -15,8 +15,8 @@ struct SearchResultModel  : Hashable, Identifiable {
     let description: String
     let date: String
     
-    init(imageURL: String, title: String, description: String, date: String) {
-        self.id = UUID().uuidString
+    init(id:String, imageURL: String, title: String, description: String, date: String) {
+        self.id = id
         self.imageURL = imageURL
         self.title = title
         self.description = description
@@ -32,3 +32,15 @@ struct SearchResultModel  : Hashable, Identifiable {
         return lhs.id == rhs.id
     }
 }
+
+extension SearchResultModel : Codable {
+    enum CodingKeys: String, CodingKey{
+        case id
+        case imageURL
+        case title
+        case description
+        case date
+    }
+}
+
+

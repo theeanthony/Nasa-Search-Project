@@ -13,6 +13,21 @@
 		1BE62EEC2A4B668600AC170C /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EEB2A4B668600AC170C /* SearchResults.swift */; };
 		1BE62EEE2A4B66BB00AC170C /* IndividualResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EED2A4B66BB00AC170C /* IndividualResult.swift */; };
 		1BE62EF12A4B677B00AC170C /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EF02A4B677B00AC170C /* SearchResultModel.swift */; };
+		1BE62EF32A4B738B00AC170C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EF22A4B738B00AC170C /* SearchView.swift */; };
+		1BE62EF52A4B76EA00AC170C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EF42A4B76EA00AC170C /* SearchViewModel.swift */; };
+		1BE62EF82A4B827100AC170C /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EF72A4B827100AC170C /* CustomProgressView.swift */; };
+		1BE62EFA2A4B8D9A00AC170C /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EF92A4B8D9A00AC170C /* SearchResponse.swift */; };
+		1BE62EFD2A4B903200AC170C /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EFC2A4B903200AC170C /* AsyncImageView.swift */; };
+		1BE62EFF2A4B943700AC170C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62EFE2A4B943700AC170C /* DetailsView.swift */; };
+		1BE62F012A4B95DA00AC170C /* ResultTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F002A4B95DA00AC170C /* ResultTitle.swift */; };
+		1BE62F032A4B95E400AC170C /* ResultDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F022A4B95E400AC170C /* ResultDescription.swift */; };
+		1BE62F052A4B95EC00AC170C /* ResultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F042A4B95EC00AC170C /* ResultImage.swift */; };
+		1BE62F0B2A4B9D5400AC170C /* Enum+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F0A2A4B9D5400AC170C /* Enum+Error.swift */; };
+		1BE62F0D2A4BA05900AC170C /* SearchCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F0C2A4BA05900AC170C /* SearchCases.swift */; };
+		1BE62F0F2A4BB39E00AC170C /* PaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F0E2A4BB39E00AC170C /* PaginationView.swift */; };
+		1BE62F122A4BD31E00AC170C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE62F112A4BD31E00AC170C /* LaunchScreen.storyboard */; };
+		1BE62F142A4BD34100AC170C /* nasa2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE62F132A4BD34100AC170C /* nasa2.png */; };
+		1BE62F182A4DE96D00AC170C /* Extensions+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F172A4DE96D00AC170C /* Extensions+View.swift */; };
 		1BEFD26B2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */; };
 		1BEFD26D2A4A6D2C00A5FBEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */; };
 		1BEFD26F2A4A6D2F00A5FBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEFD26E2A4A6D2F00A5FBEE /* Assets.xcassets */; };
@@ -48,6 +63,22 @@
 		1BE62EEB2A4B668600AC170C /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		1BE62EED2A4B66BB00AC170C /* IndividualResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualResult.swift; sourceTree = "<group>"; };
 		1BE62EF02A4B677B00AC170C /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
+		1BE62EF22A4B738B00AC170C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1BE62EF42A4B76EA00AC170C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		1BE62EF72A4B827100AC170C /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		1BE62EF92A4B8D9A00AC170C /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		1BE62EFC2A4B903200AC170C /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		1BE62EFE2A4B943700AC170C /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		1BE62F002A4B95DA00AC170C /* ResultTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTitle.swift; sourceTree = "<group>"; };
+		1BE62F022A4B95E400AC170C /* ResultDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDescription.swift; sourceTree = "<group>"; };
+		1BE62F042A4B95EC00AC170C /* ResultImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultImage.swift; sourceTree = "<group>"; };
+		1BE62F0A2A4B9D5400AC170C /* Enum+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Error.swift"; sourceTree = "<group>"; };
+		1BE62F0C2A4BA05900AC170C /* SearchCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCases.swift; sourceTree = "<group>"; };
+		1BE62F0E2A4BB39E00AC170C /* PaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationView.swift; sourceTree = "<group>"; };
+		1BE62F112A4BD31E00AC170C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BE62F132A4BD34100AC170C /* nasa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nasa2.png; path = ../../../../../Downloads/nasa2.png; sourceTree = "<group>"; };
+		1BE62F152A4BD40C00AC170C /* Nasa-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Nasa-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1BE62F172A4DE96D00AC170C /* Extensions+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+View.swift"; sourceTree = "<group>"; };
 		1BEFD2672A4A6D2C00A5FBEE /* Nasa Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectApp.swift; sourceTree = "<group>"; };
 		1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,9 +121,11 @@
 		1BE62EDD2A4B48C000AC170C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62EFB2A4B902100AC170C /* AsyncImage */,
+				1BE62EF62A4B825D00AC170C /* CustomProgressView */,
 				1BE62EE62A4B4A8300AC170C /* Background */,
 				1BE62EE52A4B4A5B00AC170C /* Components */,
-				1BE62EE12A4B492500AC170C /* SearchPageTab */,
+				1BE62EE12A4B492500AC170C /* DetailsTab */,
 				1BE62EE02A4B48E200AC170C /* HomeTab */,
 			);
 			path = View;
@@ -101,6 +134,7 @@
 		1BE62EDE2A4B48C700AC170C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62EF42A4B76EA00AC170C /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -109,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				1BE62EF02A4B677B00AC170C /* SearchResultModel.swift */,
+				1BE62EF92A4B8D9A00AC170C /* SearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,11 +156,12 @@
 			path = HomeTab;
 			sourceTree = "<group>";
 		};
-		1BE62EE12A4B492500AC170C /* SearchPageTab */ = {
+		1BE62EE12A4B492500AC170C /* DetailsTab */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62EFE2A4B943700AC170C /* DetailsView.swift */,
 			);
-			path = SearchPageTab;
+			path = DetailsTab;
 			sourceTree = "<group>";
 		};
 		1BE62EE42A4B4A4B00AC170C /* SearchBarComponents */ = {
@@ -134,6 +170,9 @@
 				1BE62EE92A4B4C4000AC170C /* SearchBar.swift */,
 				1BE62EEB2A4B668600AC170C /* SearchResults.swift */,
 				1BE62EED2A4B66BB00AC170C /* IndividualResult.swift */,
+				1BE62EF22A4B738B00AC170C /* SearchView.swift */,
+				1BE62F0C2A4BA05900AC170C /* SearchCases.swift */,
+				1BE62F0E2A4BB39E00AC170C /* PaginationView.swift */,
 			);
 			path = SearchBarComponents;
 			sourceTree = "<group>";
@@ -158,8 +197,52 @@
 		1BE62EEF2A4B66C100AC170C /* ResultDisplayComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62F002A4B95DA00AC170C /* ResultTitle.swift */,
+				1BE62F022A4B95E400AC170C /* ResultDescription.swift */,
+				1BE62F042A4B95EC00AC170C /* ResultImage.swift */,
 			);
 			path = ResultDisplayComponents;
+			sourceTree = "<group>";
+		};
+		1BE62EF62A4B825D00AC170C /* CustomProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE62EF72A4B827100AC170C /* CustomProgressView.swift */,
+			);
+			path = CustomProgressView;
+			sourceTree = "<group>";
+		};
+		1BE62EFB2A4B902100AC170C /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				1BE62EFC2A4B903200AC170C /* AsyncImageView.swift */,
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		1BE62F092A4B9D4600AC170C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1BE62F0A2A4B9D5400AC170C /* Enum+Error.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1BE62F102A4BD30B00AC170C /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BE62F132A4BD34100AC170C /* nasa2.png */,
+				1BE62F112A4BD31E00AC170C /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		1BE62F162A4DE95A00AC170C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BE62F172A4DE96D00AC170C /* Extensions+View.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1BEFD25E2A4A6D2C00A5FBEE = {
@@ -185,6 +268,10 @@
 		1BEFD2692A4A6D2C00A5FBEE /* Nasa Project */ = {
 			isa = PBXGroup;
 			children = (
+				1BE62F152A4BD40C00AC170C /* Nasa-Project-Info.plist */,
+				1BE62F162A4DE95A00AC170C /* Extensions */,
+				1BE62F102A4BD30B00AC170C /* LaunchScreen */,
+				1BE62F092A4B9D4600AC170C /* Enums */,
 				1BE62EDF2A4B48CE00AC170C /* Model */,
 				1BE62EDE2A4B48C700AC170C /* ViewModel */,
 				1BE62EDD2A4B48C000AC170C /* View */,
@@ -327,7 +414,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE62F122A4BD31E00AC170C /* LaunchScreen.storyboard in Resources */,
 				1BEFD2722A4A6D2F00A5FBEE /* Preview Assets.xcassets in Resources */,
+				1BE62F142A4BD34100AC170C /* nasa2.png in Resources */,
 				1BEFD26F2A4A6D2F00A5FBEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,16 +442,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE62EFA2A4B8D9A00AC170C /* SearchResponse.swift in Sources */,
 				1BE62EEA2A4B4C4000AC170C /* SearchBar.swift in Sources */,
 				1BE62EE82A4B4A9100AC170C /* BackgroundView.swift in Sources */,
+				1BE62F0D2A4BA05900AC170C /* SearchCases.swift in Sources */,
+				1BE62F0B2A4B9D5400AC170C /* Enum+Error.swift in Sources */,
 				1BEFD2742A4A6D2F00A5FBEE /* Persistence.swift in Sources */,
 				1BE62EEE2A4B66BB00AC170C /* IndividualResult.swift in Sources */,
+				1BE62F032A4B95E400AC170C /* ResultDescription.swift in Sources */,
+				1BE62F012A4B95DA00AC170C /* ResultTitle.swift in Sources */,
 				1BE62EF12A4B677B00AC170C /* SearchResultModel.swift in Sources */,
 				1BEFD26D2A4A6D2C00A5FBEE /* ContentView.swift in Sources */,
+				1BE62EF52A4B76EA00AC170C /* SearchViewModel.swift in Sources */,
+				1BE62EFD2A4B903200AC170C /* AsyncImageView.swift in Sources */,
 				1BEFD2772A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld in Sources */,
+				1BE62EF82A4B827100AC170C /* CustomProgressView.swift in Sources */,
+				1BE62F0F2A4BB39E00AC170C /* PaginationView.swift in Sources */,
 				1BE62EE32A4B494600AC170C /* HomeView.swift in Sources */,
 				1BE62EEC2A4B668600AC170C /* SearchResults.swift in Sources */,
+				1BE62EFF2A4B943700AC170C /* DetailsView.swift in Sources */,
 				1BEFD26B2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift in Sources */,
+				1BE62F052A4B95EC00AC170C /* ResultImage.swift in Sources */,
+				1BE62F182A4DE96D00AC170C /* Extensions+View.swift in Sources */,
+				1BE62EF32A4B738B00AC170C /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,9 +626,10 @@
 				DEVELOPMENT_TEAM = S7B7P49UC4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nasa-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,9 +656,10 @@
 				DEVELOPMENT_TEAM = S7B7P49UC4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nasa-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

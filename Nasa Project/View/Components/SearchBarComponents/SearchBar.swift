@@ -10,12 +10,13 @@ import SwiftUI
 
 struct SearchBar: View {
     
-    @Binding var searchText : String
+    @Binding var hideMainNasaImage : Bool
     @FocusState var isFocused : Bool
+    @ObservedObject var searchViewModel : SearchViewModel
     var body: some View {
         HStack {
             
-            if isFocused{
+            if isFocused || hideMainNasaImage{
                 Image("nasa")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -23,11 +24,35 @@ struct SearchBar: View {
                     .padding(.leading, 10)
 
             }
-            TextField("Search", text: $searchText)
+            TextField("Search", text: $searchViewModel.searchText)
+                .foregroundColor(.white)
+                .onSubmit {
+                    searchViewModel.search(newSearch: true)
+                }
                 .focused($isFocused)
+                .onChange(of: isFocused, perform: { _ in
+                    self.hideMainNasaImage = true
+                })
+                .placeholder(when:searchViewModel.searchText.isEmpty) {
+                    Text("Try Search for \"Apollo\"").opacity(0.75).foregroundColor(.white)
+
+            }
                 .padding()
-                .accentColor(.white)
-                .foregroundColor(isFocused ? .white : .white.opacity(0.6))
+//                .
+            
+            Spacer()
+            
+            if hideMainNasaImage {
+                Button {
+                    self.hideMainNasaImage = false
+                    self.isFocused = false
+                    searchViewModel.clearSearch()
+                } label: {
+                    Text("Cancel").foregroundColor(.white).opacity(0.8)
+                        .padding(.trailing,15)
+                }
+            }
+
            
         }
         .background(Rectangle().stroke(.white, lineWidth: 2))
