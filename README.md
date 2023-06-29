@@ -2,6 +2,7 @@
 
 **How to run Nasa Project App** 
 
+- You must have XCode installed or an application that can run .xcodeproj
 - Download zip NasaProject
 - Open zip file
 - Double click or right click and press open on Nasa Project.xcodeproj
