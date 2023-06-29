@@ -12,7 +12,7 @@ class Nasa_ProjectTests: XCTestCase {
     override func tearDownWithError() throws {
         viewModel = nil
     }
-
+    //Test normal search
     func testSearch() throws {
         // Given
         let searchText = "moon"
@@ -30,7 +30,7 @@ class Nasa_ProjectTests: XCTestCase {
 
         wait(for: [expectation], timeout: 5.0)
     }
-
+    //Test clear function that resets searchText, searchResults, currentpage and totalPageNumbers
     func testClearSearch() throws {
         // Given
         let expectation = XCTestExpectation(description: "Search Cleared")
@@ -51,6 +51,7 @@ class Nasa_ProjectTests: XCTestCase {
         wait(for: [expectation], timeout: 2.0)
     }
 
+    //Test nextPage function that retrieves next page of items
     func testNextPage() throws {
         // Given
         let expectation = XCTestExpectation(description: "Next Page Loaded")
@@ -71,7 +72,7 @@ class Nasa_ProjectTests: XCTestCase {
 
         wait(for: [expectation], timeout: 5.0)
     }
-
+    //Test prevPage function that retrieves page before items
     func testPrevPage() throws {
         // Given
         let expectation = XCTestExpectation(description: "Previous Page Loaded")
@@ -96,12 +97,13 @@ class Nasa_ProjectTests: XCTestCase {
     
     //Test for a searchtext that pushes the boundaries of maximum characters
     func testCrazySearchText() throws {
-        let viewModel = SearchViewModel()
-
+        //Given
+        let expectation = XCTestExpectation(description: "Search Results Empty Fetched")
+        //When
         viewModel.searchText = "@@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:@UDHSJDSA*@@U&*(#&@789712398&(*&)&@)*(&#*)@&#&!@)*#&)(*&$$)@(&)*DJSADJS:DJAS:KJD:ASJD:LSKA"
         viewModel.search(newSearch: true)
-        let expectation = XCTestExpectation(description: "Search Results Empty Fetched")
 
+        //Then
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             XCTAssertTrue(self.viewModel.searchResults.count == 0)
             expectation.fulfill()
@@ -112,10 +114,12 @@ class Nasa_ProjectTests: XCTestCase {
     }
     //Text for a searchText that is empty string
     func testBlankSearch() throws {
+        //Given
+        let expectation = XCTestExpectation(description: "Empty searchText Fetched")
+        //When
         viewModel.searchText = ""
         viewModel.search(newSearch: false)
-        let expectation = XCTestExpectation(description: "Empty searchText Fetched")
-
+        //Then
         DispatchQueue.main.asyncAfter(deadline: .now() + 2){
             XCTAssertTrue(self.viewModel.fetchStatus == .AllGood)
             expectation.fulfill()

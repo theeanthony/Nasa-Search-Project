@@ -35,8 +35,6 @@
 		1BEFD2742A4A6D2F00A5FBEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD2732A4A6D2F00A5FBEE /* Persistence.swift */; };
 		1BEFD2772A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD2752A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld */; };
 		1BEFD2812A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD2802A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift */; };
-		1BEFD28B2A4A6D2F00A5FBEE /* Nasa_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD28A2A4A6D2F00A5FBEE /* Nasa_ProjectUITests.swift */; };
-		1BEFD28D2A4A6D2F00A5FBEE /* Nasa_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD28C2A4A6D2F00A5FBEE /* Nasa_ProjectUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +87,6 @@
 		1BEFD27C2A4A6D2F00A5FBEE /* Nasa ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEFD2802A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectTests.swift; sourceTree = "<group>"; };
 		1BEFD2862A4A6D2F00A5FBEE /* Nasa ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEFD28A2A4A6D2F00A5FBEE /* Nasa_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectUITests.swift; sourceTree = "<group>"; };
-		1BEFD28C2A4A6D2F00A5FBEE /* Nasa_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +246,6 @@
 			children = (
 				1BEFD2692A4A6D2C00A5FBEE /* Nasa Project */,
 				1BEFD27F2A4A6D2F00A5FBEE /* Nasa ProjectTests */,
-				1BEFD2892A4A6D2F00A5FBEE /* Nasa ProjectUITests */,
 				1BEFD2682A4A6D2C00A5FBEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -299,15 +294,6 @@
 				1BEFD2802A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift */,
 			);
 			path = "Nasa ProjectTests";
-			sourceTree = "<group>";
-		};
-		1BEFD2892A4A6D2F00A5FBEE /* Nasa ProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1BEFD28A2A4A6D2F00A5FBEE /* Nasa_ProjectUITests.swift */,
-				1BEFD28C2A4A6D2F00A5FBEE /* Nasa_ProjectUITestsLaunchTests.swift */,
-			);
-			path = "Nasa ProjectUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,8 +466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEFD28B2A4A6D2F00A5FBEE /* Nasa_ProjectUITests.swift in Sources */,
-				1BEFD28D2A4A6D2F00A5FBEE /* Nasa_ProjectUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
