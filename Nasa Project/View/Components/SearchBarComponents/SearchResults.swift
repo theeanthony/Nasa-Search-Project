@@ -29,14 +29,14 @@ struct SearchResults: View {
                             .listRowSeparatorTint(.white.opacity(0.8))
                     }
                     
-                    .listRowBackground(Color.black)
+                    .listRowBackground(Color.black.opacity(0.6))
 
                     .buttonStyle(PlainButtonStyle())
 
                 }
                 .listRowSeparator(.hidden)
                 .listStyle(.plain)
-                .listRowBackground(Color.black)
+                .listRowBackground(Color.black.opacity(0.6))
 
             }
                 
@@ -52,7 +52,7 @@ struct SearchResults: View {
 
      
         }
-        .background(BackgroundView())
+//        .background(BackgroundView())
         .onChange(of: searchViewModel.fetchStatus) { newValue in
             if newValue != .AllGood{
                 self.showError = true

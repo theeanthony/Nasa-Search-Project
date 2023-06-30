@@ -25,6 +25,7 @@ struct SearchBar: View {
 
             }
             TextField("Search", text: $searchViewModel.searchText)
+                .ignoresSafeArea(.keyboard)
                 .foregroundColor(.white)
                 .onSubmit {
                     searchViewModel.search(newSearch: true)

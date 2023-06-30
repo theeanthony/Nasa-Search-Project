@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct Nasa_ProjectApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             HomeView()
+//                .background(BackgroundView())
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

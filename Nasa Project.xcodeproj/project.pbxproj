@@ -29,11 +29,8 @@
 		1BE62F142A4BD34100AC170C /* nasa2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE62F132A4BD34100AC170C /* nasa2.png */; };
 		1BE62F182A4DE96D00AC170C /* Extensions+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62F172A4DE96D00AC170C /* Extensions+View.swift */; };
 		1BEFD26B2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */; };
-		1BEFD26D2A4A6D2C00A5FBEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */; };
 		1BEFD26F2A4A6D2F00A5FBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEFD26E2A4A6D2F00A5FBEE /* Assets.xcassets */; };
 		1BEFD2722A4A6D2F00A5FBEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEFD2712A4A6D2F00A5FBEE /* Preview Assets.xcassets */; };
-		1BEFD2742A4A6D2F00A5FBEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD2732A4A6D2F00A5FBEE /* Persistence.swift */; };
-		1BEFD2772A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD2752A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld */; };
 		1BEFD2812A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEFD2802A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,11 +76,8 @@
 		1BE62F172A4DE96D00AC170C /* Extensions+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+View.swift"; sourceTree = "<group>"; };
 		1BEFD2672A4A6D2C00A5FBEE /* Nasa Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectApp.swift; sourceTree = "<group>"; };
-		1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BEFD26E2A4A6D2F00A5FBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BEFD2712A4A6D2F00A5FBEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1BEFD2732A4A6D2F00A5FBEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		1BEFD2762A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nasa_Project.xcdatamodel; sourceTree = "<group>"; };
 		1BEFD27C2A4A6D2F00A5FBEE /* Nasa ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEFD2802A4A6D2F00A5FBEE /* Nasa_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_ProjectTests.swift; sourceTree = "<group>"; };
 		1BEFD2862A4A6D2F00A5FBEE /* Nasa ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,10 +265,7 @@
 				1BE62EDE2A4B48C700AC170C /* ViewModel */,
 				1BE62EDD2A4B48C000AC170C /* View */,
 				1BEFD26A2A4A6D2C00A5FBEE /* Nasa_ProjectApp.swift */,
-				1BEFD26C2A4A6D2C00A5FBEE /* ContentView.swift */,
 				1BEFD26E2A4A6D2F00A5FBEE /* Assets.xcassets */,
-				1BEFD2732A4A6D2F00A5FBEE /* Persistence.swift */,
-				1BEFD2752A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld */,
 				1BEFD2702A4A6D2F00A5FBEE /* Preview Content */,
 			);
 			path = "Nasa Project";
@@ -433,15 +424,12 @@
 				1BE62EE82A4B4A9100AC170C /* BackgroundView.swift in Sources */,
 				1BE62F0D2A4BA05900AC170C /* SearchCases.swift in Sources */,
 				1BE62F0B2A4B9D5400AC170C /* Enum+Error.swift in Sources */,
-				1BEFD2742A4A6D2F00A5FBEE /* Persistence.swift in Sources */,
 				1BE62EEE2A4B66BB00AC170C /* IndividualResult.swift in Sources */,
 				1BE62F032A4B95E400AC170C /* ResultDescription.swift in Sources */,
 				1BE62F012A4B95DA00AC170C /* ResultTitle.swift in Sources */,
 				1BE62EF12A4B677B00AC170C /* SearchResultModel.swift in Sources */,
-				1BEFD26D2A4A6D2C00A5FBEE /* ContentView.swift in Sources */,
 				1BE62EF52A4B76EA00AC170C /* SearchViewModel.swift in Sources */,
 				1BE62EFD2A4B903200AC170C /* AsyncImageView.swift in Sources */,
-				1BEFD2772A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld in Sources */,
 				1BE62EF82A4B827100AC170C /* CustomProgressView.swift in Sources */,
 				1BE62F0F2A4BB39E00AC170C /* PaginationView.swift in Sources */,
 				1BE62EE32A4B494600AC170C /* HomeView.swift in Sources */,
@@ -775,19 +763,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		1BEFD2752A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1BEFD2762A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodel */,
-			);
-			currentVersion = 1BEFD2762A4A6D2F00A5FBEE /* Nasa_Project.xcdatamodel */;
-			path = Nasa_Project.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 1BEFD25F2A4A6D2C00A5FBEE /* Project object */;
 }
